@@ -59,7 +59,7 @@ AF_interval_left = AF_mean - Del_AF
 AF_interval_right = AF_mean + Del_AF
 
 
-# Тестирование гипотезы об раменстве средних объёмов по сегментам для уровня значимости 0.1
+# Тестирование гипотезы о равенстве средних объёмов по сегментам для уровня значимости 0.1
 Test_result_statistic,Test_result_pval  = t_test(R_mean,R_std,R_num,AF_mean,AF_std,AF_num)
 
 
