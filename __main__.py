@@ -29,7 +29,7 @@ StdVolume = db.groupby('Segment').VolumeRUR.std()                       # Сод
 SegmentsTotalTranc = db.groupby('Segment').TrancNum.count()             # Содержит разбитые по сегментам R и AF суммарные количества транкзации
 
 
-# Вызывается метот dask.compute(). Машина ничинает обработку данных
+# Вызывается метод dask.compute(). Машина ничинает обработку данных
 SegmentsUniqClient,MeanVolume,StdVolume,SegmentsTotalTranc = dask.compute(SegmentsUniqClient,MeanVolume,StdVolume,SegmentsTotalTranc)
 
 
